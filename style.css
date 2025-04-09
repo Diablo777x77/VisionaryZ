@@ -1,0 +1,60 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  height: 100%;
+  background-color: #000;
+  color: white;
+}
+.gradient-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #6a11cb, #2575fc, #ff416c, #ff4b2b);
+  background-size: 800% 800%;
+  animation: gradientShift 15s ease infinite;
+  z-index: 0;
+  filter: blur(20px);
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+}
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(255, 65, 108, 0.6);
+  transition: transform 0.2s ease;
+}
+button:hover {
+  transform: scale(1.05);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  color: white;
+}
+li {
+  margin: 10px 0;
+  font-size: 18px;
+  text-shadow: 0 0 3px black;
+}
+.hidden {
+  display: none;
+}
