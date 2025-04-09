@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VisionaryZ</title>
+  <link rel="stylesheet" href="style/global.css" />
+  <link rel="stylesheet" href="style/animations.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icon.png" type="image/png" />
+</head>
+<body>
+  <div class="gradient-bg"></div>
+  <div class="container">
+    <h1 class="fade-in">Witaj w VisionaryZ</h1>
+    <p class="fade-in delay-1">Twój dzień zwycięzcy zaczyna się teraz</p>
+
+    <div class="button-group fade-in delay-2">
+      <a href="pages/dashboard.html" class="lux-btn">Dashboard</a>
+      <a href="pages/assistant.html" class="lux-btn">Asystent AI</a>
+    </div>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+    }
+  </script>
+</body>
+</html>
