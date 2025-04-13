@@ -1,0 +1,1 @@
+export default function GameRoom() { return <div>Pokój gry</div>; }
